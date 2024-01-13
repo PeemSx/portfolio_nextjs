@@ -2,11 +2,12 @@ import React from 'react';
 
 const Introduction = () => {
   return (
-    <div className='w-screen px-16 py-16 h-screen flex items-center justify-center gap-36'>
+    <div className='p-12 h-screen flex items-center justify-center gap-36'>
       <div className='absolute bg-white w-20 h-60 left-80 z-0 opacity-10'></div>
-      <img src='images/profile.jpg' className='h-3/4 grayscale z-10' alt='Profile' />
+      <img src='images/profile.jpg' className='h-3/4 grayscale z-10 rounded-xl' alt='Profile' />
       <div>
-        <table className='w-full'>
+  
+        <table className=''>
           <tbody>
             <tr className='py-4'>
               <td className='text-left px-10 py-2 font-bold opacity-40'>Name</td>

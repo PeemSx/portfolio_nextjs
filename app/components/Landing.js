@@ -2,12 +2,12 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram,faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import '@fortawesome/fontawesome-svg-core/styles.css';
+
 
 
 const Landing = () => {
   return (
-    <div className='flex h-screen p-16'>
+    <div className='flex h-screen p-12'>
     <div className=' flex flex-col justify-between w-5/6'>
 
     
