@@ -7,7 +7,7 @@ const Symposium = () => {
      
         <img src='images/Symposium.png' alt='posn' className='w-1/2 mx-auto'></img>
         <h2 className='text-balance text-center'>
-            I was quanlified to be an English oral presenter.         
+            I was quanlified to be an English oral presenter to present my game project.         
         </h2>
       
       
