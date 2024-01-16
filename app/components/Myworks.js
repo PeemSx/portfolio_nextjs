@@ -13,15 +13,15 @@ const Myworks = () => {
   },{
     header: "National Software Contest",
     path:'images/NSC2022.png',
-    description:"I developed an 8-bit adventurous game for education named “Periodic Table Game”",
+    description:"I developed an 8-bit adventurous game for education named “Periodic Table Game”.",
   },{
-    header: "National Software Contest",
+    header: "PCSHS Symposium",
     path:'images/Symposium.png',
-    description:"I developed an 8-bit adventurous game for education named “Periodic Table Game”",
+    description:"I was quanlified to be an English oral presenter to present my game project.",
   }]
   
   const works =  paths.map((obj) => (
-    <Certificate path={obj.path} header={obj.description} description={obj.description} key={obj.header}/>
+    <Certificate path={obj.path} header={obj.header} description={obj.description} key={obj.header}/>
   )
   )
 
