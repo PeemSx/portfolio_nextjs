@@ -28,6 +28,12 @@ app.use(cookieParser());
 // app.use('/workingSpaces', workingSpaces);
 // app.use('/reservations', reservations);
 app.use('/api/auth',auth);
+app.use('/', () => {
+
+    res.status(200).json({
+        success:true
+    });
+});
 
 
 const PORT = process.env.PORT || 5000;
