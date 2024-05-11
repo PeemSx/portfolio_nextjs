@@ -12,7 +12,7 @@ const auth = require('./routes/auth');
 
 const cors = require('cors');
 
-// dotenv.config({path:'./config/config.env'});
+dotenv.config({path:'./config/config.env'});
 
 connectDB();
 
