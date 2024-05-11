@@ -28,11 +28,8 @@ app.use(cookieParser());
 // app.use('/workingSpaces', workingSpaces);
 // app.use('/reservations', reservations);
 app.use('/api/auth',auth);
-app.use('/', () => {
-
-    res.status(200).json({
-        success:true
-    });
+app.use('/', (req,res) => {
+    res.send('This is my API for portfolio web');
 });
 
 
