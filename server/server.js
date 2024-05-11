@@ -28,7 +28,7 @@ app.use(cookieParser());
 // app.use('/workingSpaces', workingSpaces);
 // app.use('/reservations', reservations);
 app.use('/api/auth',auth);
-app.use('/', (req,res) => {
+app.get('/', (req,res) => {
     res.send('This is my API for portfolio web');
 });
 
