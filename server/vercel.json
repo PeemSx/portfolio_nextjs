@@ -1,0 +1,16 @@
+{
+    "version" : "1",
+    "builds" : [
+        {
+            "src" : "server.js",
+            "use" : "@now/node"
+
+        }
+    ],
+    "rouets":[
+        {
+            "src" : "/(.*)",
+            "dest" : "server.js"
+        }
+    ]
+}
