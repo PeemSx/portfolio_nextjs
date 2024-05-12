@@ -31,7 +31,7 @@ const TopMenu =  () => {
     <div className='flex justify-between px-6 py-2 mt-2'>
       <div className='flex'>
         <Link href="/">
-          <h2 className='hover:text-white hover:bg-black bg-slate-300 px-2 rounded-lg text-black'>Homie</h2>
+          <h2 className='hover:text-white hover:bg-black bg-slate-300 px-2 rounded-full text-black '>Homie</h2>
         </Link>
         {
           session? 
@@ -45,17 +45,17 @@ const TopMenu =  () => {
          
 
           <Link href="/login">
-              <h2 className='hover:text-white '>Login</h2>
+              <h2 className='hover:text-white rounded-full text-white border border-white'>Login</h2>
           </Link>
         
         ) : (
           <div className='flex gap-2'>          
           <Link href="/pomodoro">
-            <h2 className='hover:text-white '>Pomodoro</h2>
+            <h2 className='hover:text-white rounded-full text-white '>Pomodoro</h2>
           </Link>
         
           <Link href="/api/auth/signout">
-            <h2 className='hover:text-red-500 hover:bg-black bg-red-500 px-2 rounded-lg text-white'>Logout</h2>
+            <h2 className='hover:text-red-500 hover:bg-black bg-red-500 px-2 rounded-full text-white'>Logout</h2>
           </Link>
         
         </div>

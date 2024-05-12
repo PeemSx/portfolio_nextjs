@@ -34,8 +34,8 @@ const page = () => {
                 return;
             }   
             
-            router.replace("welcome");
-            // console.log(email + " "  password);
+            router.push("/")
+
 
         }catch(err){
             console.log(err);
