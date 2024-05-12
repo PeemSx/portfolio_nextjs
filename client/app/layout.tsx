@@ -9,10 +9,11 @@ import TopMenu from './components/TopMenu';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const nextAuthSession =  await getServerSession(authOptions)
 
 export default async function RootLayout({ children } ) {
 
+  
+  const nextAuthSession =  await getServerSession(authOptions)
   return (
     
     <html lang="en">

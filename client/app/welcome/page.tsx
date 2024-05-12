@@ -1,10 +1,6 @@
-
 import React from 'react'
-import { headers } from 'next/headers'
 
 const page = () => {
-  
-  const headersList = headers();
 
   return (
     <div className='w-full flex text-center justify-center'>

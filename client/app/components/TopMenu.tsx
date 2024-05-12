@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import Link from 'next/link';
-import LogoutButton from './LogoutButton';
+
 import getUserprofile from '../../libs/auth/getUserprofile';
 import { useState, useEffect } from 'react';
 
@@ -13,7 +13,7 @@ const TopMenu =  () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const userProfile = await getUserprofile(session?.user?.token);
+        const userProfile = await getUserprofile(session?.user.token);
         setProfile(userProfile);
 
       } catch (error) {
