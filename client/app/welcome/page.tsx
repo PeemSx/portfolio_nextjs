@@ -1,10 +1,10 @@
-'use client'
-import React from 'react'
-import { useSession } from 'next-auth/react';
-const page = () => {
-    
-    const {data:session} = useSession();
 
+import React from 'react'
+import { headers } from 'next/headers'
+
+const page = () => {
+  
+  const headersList = headers();
 
   return (
     <div className='w-full flex text-center justify-center'>

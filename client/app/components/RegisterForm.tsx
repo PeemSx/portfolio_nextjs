@@ -3,7 +3,7 @@ import { TextField } from '@mui/material'
 import React, { useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import userRegister from '@/libs/auth/userRegister'
+import userRegister from '../../libs/auth/userRegister'
 
 
 const RegisterForm = () => {

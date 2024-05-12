@@ -23,12 +23,15 @@ const Timer = () => {
 
       if(isStart){
 
-  
-        setTime(
-          (time) => time > 0 ? 
-          (time - 1) : 
-          clearInterval(0)
-        );
+        
+        setTime((time) => {
+          if (time > 0) {
+            return time - 1;
+          } else {
+            clearInterval(0);
+            return time; 
+          }
+        });
       }
 
     }, 1000);

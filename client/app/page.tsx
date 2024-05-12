@@ -1,10 +1,12 @@
-import Image from 'next/image'
+
 import Landing from './components/Landing'
 import Introduction from './components/Introduction'
 
 import Myworks from './components/Myworks'
 
 export default function Home() {
+
+
   return (
     <div>
       
