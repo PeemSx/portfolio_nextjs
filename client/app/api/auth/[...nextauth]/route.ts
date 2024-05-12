@@ -1,11 +1,12 @@
-import userLogin from "../../../../libs/auth/userLogin";
-import NextAuth from "next-auth";
 
+import NextAuth, {AuthOptions} from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import userLogin from "../../../../libs/auth/userLogin";
 
-
-const  authOptions = {
-
+export const  authOptions : AuthOptions= {
+  pages:{
+    signIn : "/login"
+  },
   providers: [
     CredentialsProvider({
 
@@ -29,18 +30,15 @@ const  authOptions = {
   session:{ strategy: "jwt" },
   callbacks:{
     async jwt({token, user}){
-      return {...token, ...user}
+      return {...token, ...user};
     },
     async session({session, token, user}){
-      session.user = token 
-      return session
+      session.user = token as any
+      return session;
     }
   },
-  secret : process.env.NEXTAUTH_SECRET,
-  pages:{
-    signIn : "/login"
-  }
-  
+  secret : process.env.NEXTAUTH_SECRET
+
 
 }
 
