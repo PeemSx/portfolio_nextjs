@@ -9,7 +9,7 @@ export const authOptions: AuthOptions = {
 
   providers: [
     CredentialsProvider({
-      name: "Credentials",
+      name: "credentials",
       credentials: {
         email: { label: "Email", type: "email", placeholder: "email" },
         password: { label: "Password", type: "password" },
