@@ -42,7 +42,7 @@ const Timer = () => {
         });
       }
 
-    }, 100);
+    }, 1000);
     return () => clearInterval(timer);
   }, [isStart]);
 
@@ -143,7 +143,7 @@ const Timer = () => {
 
       {
         isSetting ?
-        <div className='w-1/3 mt-8 space-y-4 bg-[#00000022] px-4 py-2 rounded-lg'>
+        <div className='w-1/3 mt-8 space-y-4 bg-[#00000022] px-4 py-2 rounded-lg sm:max-md:w-full'>
           <h1>Working Duration</h1>
           <Slider  
             aria-label="Working Duration"

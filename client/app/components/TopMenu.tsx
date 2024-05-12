@@ -28,8 +28,8 @@ const TopMenu =  () => {
   }, [session]);
 
   return (
-    <div className='flex justify-between px-6 py-2 mt-2'>
-      <div className='flex'>
+    <div className='flex justify-between px-8 py-3 mt-1 '>
+      <div className='flex gap-2'>
         <Link href="/">
           <h2 className='hover:text-white hover:bg-black bg-slate-300 px-2 rounded-full text-black '>Homie</h2>
         </Link>
@@ -45,11 +45,11 @@ const TopMenu =  () => {
          
 
           <Link href="/login">
-              <h2 className='hover:text-white rounded-full text-white border border-white'>Login</h2>
+              <h2 className='hover:text-white rounded-full text-white border border-white px-2'>Login</h2>
           </Link>
         
         ) : (
-          <div className='flex gap-2'>          
+          <div className='flex gap-4'>          
           <Link href="/pomodoro">
             <h2 className='hover:text-white rounded-full text-white '>Pomodoro</h2>
           </Link>

@@ -11,7 +11,7 @@ const Landing =   () => {
 
 
   return (
-    <div className='flex h-screen p-12'>
+    <div className='flex h-[92vh] p-12'>
       <div className=' flex flex-col justify-between w-5/6'>
 
       
