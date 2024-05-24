@@ -7,10 +7,12 @@ const mongoSanitize = require('express-mongo-sanitize');
 const rateLimit = require('express-rate-limit');
 const {xss} = require('express-xss-sanitizer');
 const helmet = require('helmet');
-const connectDB = require('./config/db');
-const auth = require('./routes/auth');
-
 const cors = require('cors');
+
+const connectDB = require('./config/db');
+
+const auth = require('./routes/auth');
+const todoItem = require('./routes/todoItem');
 
 dotenv.config({path:'./config/config.env'});
 
@@ -27,11 +29,14 @@ app.use(cookieParser());
 
 // app.use('/workingSpaces', workingSpaces);
 // app.use('/reservations', reservations);
-app.use('/api/auth',auth);
+
 app.get('/', (req,res) => {
     res.send('This is my API for portfolio web');
 });
 
+
+app.use('/api/auth',auth);
+app.use('/api/todoLists', todoItem );
 
 const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, () => {

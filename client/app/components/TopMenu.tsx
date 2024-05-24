@@ -49,9 +49,13 @@ const TopMenu =  () => {
           </Link>
         
         ) : (
-          <div className='flex gap-4'>          
+          <div className='flex gap-4'>   
+          <Link href="/todo-list">
+            <h2 className='hover:text-white rounded-full text-white'>Todo-List</h2>
+          </Link>
+
           <Link href="/pomodoro">
-            <h2 className='hover:text-white rounded-full text-white '>Pomodoro</h2>
+            <h2 className='hover:text-white rounded-full text-white'>Pomodoro</h2>
           </Link>
         
           <Link href="/api/auth/signout">

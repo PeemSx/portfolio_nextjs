@@ -4,6 +4,8 @@ import Introduction from './components/Introduction'
 
 import Myworks from './components/Myworks'
 
+
+
 export default function Home() {
 
 
@@ -11,8 +13,8 @@ export default function Home() {
     <div>
       
       <Landing/>
-      <Introduction/>
-      <Myworks/>
+      {/* <Introduction/>
+      <Myworks/> */}
     </div>
   )
 }
