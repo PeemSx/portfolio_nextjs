@@ -15,7 +15,7 @@ const auth = require('./routes/auth');
 const todoItem = require('./routes/todoItem');
 
 dotenv.config({path:'./config/config.env'});
-
+app.use(cors());
 connectDB();
 
 const app = express();
